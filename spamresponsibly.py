@@ -1,9 +1,9 @@
 val = int(input(print("Enter a number: ")))
 option = {
-    "N":"Nae nigga nae \n", "n":"Nae nigga nae \n", "C":"Uohhhhhh :sob::sob::sob: \n", "c":"Uohhhhhh :sob::sob::sob: \n",
-    "I":"I am living in your walls, oomfie. \n", "i":"I am living in your walls, oomfie. \n"
+    "n":"Nae nigga nae \n", "c":"Uohhhhhh :sob::sob::sob: \n",
+    "i":"I am living in your walls, oomfie. \n"
     }
 userinput = input("Choose your poison: [N]iggas, [C]unny, [I]solation")
-f = open('outputtings.txt','w')
-print(option[userinput] * val, file=f)
+with open("outputtings.txt",'w') as f:
+    f.write(option[userinput.lower()] * val)
 print("Output saved to file. Spam responsibly, fam.")
