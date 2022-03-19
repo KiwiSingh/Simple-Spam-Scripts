@@ -1,6 +1,6 @@
 # Velo's Spam Scripts
 
-These are a set of scripts written in Python, with assumed compatibility for Python 3.x and above. The intention behind them is to generate spammy text messages, that you can then copy and paste from the text files to your choice of messenger, whether that be WhatsApp, Discord or Telegram. Some of the scripts may have emojis written using the format supported by Discord and WhatsApp Web, use the correct option while running the script. Note that, while the options are designed to be case-insensitive, there is no error handling. I am not responsible for any strong language, mature themes, or otherwise problematic stuff in the scripts/options. Currently, there are only two scripts, but I shall work on more when I'm bored enough.
+These are a set of scripts written in Python, with assumed compatibility for Python 3.x and above. The intention behind them is to generate spammy text messages, that you can then copy and paste from the text files to your choice of messenger, whether that be WhatsApp, Discord or Telegram. Some of the scripts may have emojis written using the format supported by Discord and WhatsApp Web; use the correct option while running the script. Note that, while the options are designed to be case-insensitive, there is no error handling. I am not responsible for any strong language, mature themes, or otherwise problematic stuff in the scripts/options. Currently, there are only two scripts, but I shall work on more when I'm bored enough.
 
 # spamresponsibly.py
 
