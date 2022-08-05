@@ -7,9 +7,9 @@ These are a set of scripts written in Python, with assumed compatibility for Pyt
 This is a simple script that repeats a string n number times, depending on user input. User first enters a number, then selects a string using a single letter code. For reasons pertaining to GitHub ToS, I cannot mention the options the script gives you for the single letter codes here.
 
 Run it in your folder of choice by using
-```
-python3 spamresponsibly.py
-```
+
+$ python3 spamresponsibly.py
+
 Output spam is generated in a file called `outputtings.txt` in the working directory; user cannot specify custom filenames or other directories.
 
 # retarded.py
@@ -26,8 +26,6 @@ The options given to the user are
 
 Run the script in your working directory by using
 
-```
-python3 retarded.py
-```
+$ python3 retarded.py
 
 User may not specify a custom output directory or different filename for output.
