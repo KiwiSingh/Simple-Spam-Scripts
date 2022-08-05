@@ -8,7 +8,7 @@ This is a simple script that repeats a string n number times, depending on user 
 
 Run it in your folder of choice by using
 ```console
-$python3 spamresponsibly.py
+user@localmachine:~$python3 spamresponsibly.py
 ```
 
 Output spam is generated in a file called `outputtings.txt` in the working directory; user cannot specify custom filenames or other directories.
@@ -26,7 +26,7 @@ The options given to the user are
 ```
 
 Run the script in your working directory by using
-```ps
-$python3 retarded.py
+```console
+user@localmachine:~$python3 retarded.py
 ```
 User may not specify a custom output directory or different filename for output.
