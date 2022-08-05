@@ -7,7 +7,7 @@ These are a set of scripts written in Python, with assumed compatibility for Pyt
 This is a simple script that repeats a string n number times, depending on user input. User first enters a number, then selects a string using a single letter code. For reasons pertaining to GitHub ToS, I cannot mention the options the script gives you for the single letter codes here.
 
 Run it in your folder of choice by using
-```console
+```ps
 $ python3 spamresponsibly.py
 ```
 
@@ -18,7 +18,7 @@ Output spam is generated in a file called `outputtings.txt` in the working direc
 This script chooses from various different copypastas, depending on user input, and outputs the chosen copypasta to a text file named `retarded.txt` in the working directory. User input is a single alphabet, case-insensitive, with no error handling. Proper attribution has been given to the authors of the copypastas.
 The options given to the user are
 
-```console
+```ps
 [V]elo
 [C]at
 [D]utch
@@ -26,7 +26,7 @@ The options given to the user are
 ```
 
 Run the script in your working directory by using
-```console
+```ps
 $ python3 retarded.py
 ```
 User may not specify a custom output directory or different filename for output.
