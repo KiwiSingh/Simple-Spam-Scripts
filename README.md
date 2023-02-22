@@ -31,6 +31,39 @@ Run the script in your working directory by using
 user@localmachine:~$ python3 retarded.py
 ```
 Please note that I am developing this on macOS now, so please open an issue if the code does not work on Windows. The code doesn't currently take into account GNU/Linux.
+
+## spamgpt.py
+This script uses GPT-3's text-davinci-002 model to generate nonsense, rambling copypasta based on a particular prompt. Please note, that your prompt needs to be short and to the point, as if you are instructing a student to write an essay.
+
+Good example:
+```posh
+Why rabbits are such bad pets
+```
+Bad example:
+```posh
+Undocumented evidence suggests that my client did nothing wrong, your honour. Arrr, we live in a lawless society anyway.
+```
+Before you run the script, you're gonna need to install some modules, including OpenAI. You can do this using the provided `requirements.txt` file.
+
+```console
+user@localmachine:~$ python3 -m pip install -r requirements.txt
+```
+
+or simply
+
+```console
+user@localmachine:~$ pip install -r requirements.txt
+```
+
+You also need your own API key, and probably need to be on a paid plan. See the OpenAI website to know more on how to generate your API key. You can then feed the API key plaintext into the provided `api_key.txt` as per the instructions in the file (unsecure, not recommended), or create a base64-encoded API key file called `api_key.base64` (secure but untested) in the same location as your unzipped files from the release package are stored.
+
+Finally, you run the code using
+
+```console
+user@localmachine:~$ python3 spamgpt.py
+```
+
+and the spam is printed out to stdout. You are also asked if you want to copy the spam to the keyboard, so that you can spread the sweet, sweet pasta.
 ## Frequently Asked Questions (FAQ)
 <strong>Q:</strong> I am new to coding and know absolutely nothing/very little about Python. I get a `python3 : The term 'python3' is not recognized as the name of a cmdlet, function, script file, or operable program` error/similar error. Help!\
 <strong>A:</strong> Not to worry! This is a very common problem. This is caused by the alias `python3` not being found. Depending on your operating system, this may be due to either Python not being installed by default (Windows/macOS), Python not being added to PATH (Windows/macOS/Linux), or a version of Python that uses the `python` alias instead of `python3`. To better diagnose the issue, try to remember if you installed Python. If you are on Linux, many distros come installed with Python by default. If you are on Windows or macOS however, you will need to install Python before you can proceed. For Windows, to use the python3 alias, it is recommended to install from the Microsoft Store on Windows 10 or higher, and more advanced users can install the latest stable or nightly build from the [Python website](https://www.python.org/). Please note, that if you install from the website, you will need to check the 'Add to PATH' option while installing, and possibly restart your computer/shell/terminal before proceeding any further. macOS users should note that legacy Python 2.7 is installed by default on most macOS builds (I have not checked the developer changelog on macOS Ventura); however, this version of Python is deprecated (in plain English, not supported by the Python devs anymore), is not supported by these scripts, and for your own sanity, you should not use it. See [this](https://www.dataquest.io/blog/installing-python-on-mac/#installing-python-mac) website to know more.\
