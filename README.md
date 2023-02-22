@@ -15,7 +15,7 @@ Output spam is generated in a file called `outputtings.txt` in the working direc
 
 ## retarded.py
 
-This script chooses from various different copypastas, depending on user input, and outputs the chosen copypasta to a text file named `retarded.txt` in the working directory. User input is a single alphabet, case-insensitive, with no error handling. Proper attribution has been given to the authors of the copypastas.
+This script chooses from various different copypastas, depending on user input, and copies the copypasta to the clipboard for pasting into another app. User input is a single alphabet, case-insensitive, with no error handling. Proper attribution has been given to the authors of the copypastas.
 The options given to the user are
 
 ```posh
@@ -23,14 +23,14 @@ The options given to the user are
 [C]at
 [D]utch
 [O]nestone
+[B]engali
 ```
 
 Run the script in your working directory by using
 ```console
 user@localmachine:~$ python3 retarded.py
 ```
-User may not specify a custom output directory or different filename for output.
-
+Please note that I am developing this on macOS now, so please open an issue if the code does not work on Windows. The code doesn't currently take into account GNU/Linux.
 ## Frequently Asked Questions (FAQ)
 <strong>Q:</strong> I am new to coding and know absolutely nothing/very little about Python. I get a `python3 : The term 'python3' is not recognized as the name of a cmdlet, function, script file, or operable program` error/similar error. Help!\
 <strong>A:</strong> Not to worry! This is a very common problem. This is caused by the alias `python3` not being found. Depending on your operating system, this may be due to either Python not being installed by default (Windows/macOS), Python not being added to PATH (Windows/macOS/Linux), or a version of Python that uses the `python` alias instead of `python3`. To better diagnose the issue, try to remember if you installed Python. If you are on Linux, many distros come installed with Python by default. If you are on Windows or macOS however, you will need to install Python before you can proceed. For Windows, to use the python3 alias, it is recommended to install from the Microsoft Store on Windows 10 or higher, and more advanced users can install the latest stable or nightly build from the [Python website](https://www.python.org/). Please note, that if you install from the website, you will need to check the 'Add to PATH' option while installing, and possibly restart your computer/shell/terminal before proceeding any further. macOS users should note that legacy Python 2.7 is installed by default on most macOS builds (I have not checked the developer changelog on macOS Ventura); however, this version of Python is deprecated (in plain English, not supported by the Python devs anymore), is not supported by these scripts, and for your own sanity, you should not use it. See [this](https://www.dataquest.io/blog/installing-python-on-mac/#installing-python-mac) website to know more.\
