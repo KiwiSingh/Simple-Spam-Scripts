@@ -33,14 +33,14 @@ user@localmachine:~$ python3 retarded.py
 Please note that I am developing this on macOS now, so please open an issue if the code does not work on Windows. The code doesn't currently take into account GNU/Linux.
 
 ## spamgpt.py
-This script uses GPT-3's text-davinci-002 model to generate nonsense, rambling copypasta based on a particular prompt. Please note, that your prompt needs to be short and to the point, as if you are instructing a student to write an essay.
+This script uses GPT-3's `text-davinci-002` model to generate nonsense, rambling copypasta based on a particular prompt. Please note, that your prompt needs to be short and to the point, as if you are instructing a student to write an essay.
 
 Good example:
-```posh
+```console
 Why rabbits are such bad pets
 ```
 Bad example:
-```posh
+```console
 Undocumented evidence suggests that my client did nothing wrong, your honour. Arrr, we live in a lawless society anyway.
 ```
 Before you run the script, you're gonna need to install some modules, including OpenAI. You can do this using the provided `requirements.txt` file.
