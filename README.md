@@ -33,7 +33,7 @@ user@localmachine:~$ python3 retarded.py
 Please note that I am developing this on macOS now, so please open an issue if the code does not work on Windows. The code doesn't currently take into account GNU/Linux.
 
 ## spamgpt.py
-This script uses GPT-3's `text-davinci-002` model to generate nonsense, rambling copypasta based on a particular prompt. Please note, that your prompt needs to be short and to the point, as if you are instructing a student to write an essay.
+This script uses GPT-3.5's `gpt-3.5-turbo` model to generate nonsense, rambling copypasta based on a particular prompt. Please note, that your prompt needs to be short and to the point, as if you are instructing a student to write an essay.
 
 Good example:
 ```console
