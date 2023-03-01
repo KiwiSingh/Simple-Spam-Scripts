@@ -17,20 +17,16 @@ openai.api_key = api_key
 spamprompt = input("Please enter your spam prompt: ")
 
 # Create prompt with user input
-prompt = f"Hey Ada, please generate a 1000-word copypasta based on the following prompt: {spamprompt}"
+prompt = f"Hey buddy, please generate a 1000-word copypasta based on the following prompt: {spamprompt}"
 
 # Generate copypasta
-response = openai.Completion.create(
-  engine="text-davinci-002",
-  prompt=prompt,
-  max_tokens=3000,
-  n=1,
-  stop=None,
-  temperature=1.5,
+response = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[{"role": "user", "content": prompt}]
 )
 
 # Extract copypasta from response
-copypasta = response.choices[0].text.strip()
+copypasta = response.choices[0].message.content
 
 # Print copypasta
 print(copypasta)
