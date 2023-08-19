@@ -14,10 +14,12 @@ except FileNotFoundError:
 openai.api_key = api_key
 
 # Get user input
+spamlength = int(input("Please enter the number of words you want in your spam: "))
 spamprompt = input("Please enter your spam prompt: ")
 
 # Create prompt with user input
-prompt = f"Hey buddy, please generate a 1000-word copypasta based on the following prompt: {spamprompt}"
+prompt = (f"Hey buddy, please generate a {spamlength}-word copypasta based on the following prompt: {spamprompt}"
+          f"Please ensure that the generated copypasta is exactly {spamlength} words long")
 
 # Generate copypasta
 response = openai.ChatCompletion.create(
