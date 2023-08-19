@@ -1,6 +1,6 @@
 import openai
 import base64
-import clipboard
+import pyperclip
 
 # Read API key from file (assumes key is stored in "api_key.txt" or "api_key.base64")
 try:
@@ -19,7 +19,7 @@ spamprompt = input("Please enter your spam prompt: ")
 
 # Create prompt with user input
 prompt = (f"Hey buddy, please generate a {spamlength}-word copypasta based on the following prompt: {spamprompt}"
-          f"Please ensure that the generated copypasta is exactly {spamlength} words long")
+          f"Please ensure that the generated copypasta is PRECISELY {spamlength} words long.")
 
 # Generate copypasta
 response = openai.ChatCompletion.create(
@@ -37,5 +37,5 @@ print(copypasta)
 copy_to_clipboard = input("Would you like to copy the copypasta to your clipboard? (y/n) ")
 
 if copy_to_clipboard.lower() == "y":
-    clipboard.copy(copypasta)
+    pyperclip.copy(copypasta)
     print("Copied to clipboard!")
