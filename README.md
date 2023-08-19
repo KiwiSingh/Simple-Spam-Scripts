@@ -22,15 +22,18 @@ The options given to the user are
 [V]elo
 [C]at
 [D]utch
+[I]ncel
 [O]nestone
+[A]liExpress
 [B]engali
+[R]eproduction
 ```
 
 Run the script in your working directory by using
 ```console
 user@localmachine:~$ python3 retarded.py
 ```
-Please note that I am developing this on macOS now, so please open an issue if the code does not work on Windows. The code doesn't currently take into account GNU/Linux.
+This script is now platform-agnostic, meaning it should work perfectly on every platform, so long as you have pyperclip installed. If it is not installed, install it using the `requirements.txt` file (see the `spamgpt.py` section).
 
 ## spamgpt.py
 This script uses OpenAI's `gpt-3.5-turbo` model to generate nonsense, rambling copypasta based on a particular prompt. Please note, that your prompt needs to be short and to the point, as if you are instructing a student to write an essay.
@@ -43,7 +46,7 @@ Bad example:
 ```console
 Undocumented evidence suggests that my client did nothing wrong, your honour. Arrr, we live in a lawless society anyway.
 ```
-Before you run the script, you're gonna need to install some modules, including OpenAI. You can do this using the provided `requirements.txt` file.
+Before you run the script, you're gonna need to install some modules, including OpenAI. You can do this using the provided `requirements.txt` file. This also install the required modules for the `retarded.py` script.
 
 ```console
 user@localmachine:~$ python3 -m pip install -r requirements.txt
@@ -62,8 +65,14 @@ Finally, you run the code using
 ```console
 user@localmachine:~$ python3 spamgpt.py
 ```
+You are then provided with the option to choose the number of words in your copypasta, as well as the prompt for the pasta itself. Please note that you do not need to preface your prompt with something like
 
-and the spam is printed out to stdout. You are also asked if you want to copy the spam to the keyboard, so that you can spread the sweet, sweet pasta.
+```console
+Please generate a copypasta based on the following prompt:
+```
+as that is already taken care of within the script, and you will actually break stuff if you do this.
+After you provide the prompt, your spam is printed out to stdout. You are also asked if you want to copy the spam to the keyboard, so that you can spread the sweet, sweet pasta.
+
 ## Frequently Asked Questions (FAQ)
 <strong>Q:</strong> I am new to coding and know absolutely nothing/very little about Python. I get a `python3 : The term 'python3' is not recognized as the name of a cmdlet, function, script file, or operable program` error/similar error. Help!\
 <strong>A:</strong> Not to worry! This is a very common problem. This is caused by the alias `python3` not being found. Depending on your operating system, this may be due to either Python not being installed by default (Windows/macOS), Python not being added to PATH (Windows/macOS/Linux), or a version of Python that uses the `python` alias instead of `python3`. To better diagnose the issue, try to remember if you installed Python. If you are on Linux, many distros come installed with Python by default. If you are on Windows or macOS however, you will need to install Python before you can proceed. For Windows, to use the python3 alias, it is recommended to install from the Microsoft Store on Windows 10 or higher, and more advanced users can install the latest stable or nightly build from the [Python website](https://www.python.org/). Please note, that if you install from the website, you will need to check the 'Add to PATH' option while installing, and possibly restart your computer/shell/terminal before proceeding any further. macOS users should note that legacy Python 2.7 is installed by default on most macOS builds (I have not checked the developer changelog on macOS Ventura); however, this version of Python is deprecated (in plain English, not supported by the Python devs anymore), is not supported by these scripts, and for your own sanity, you should not use it. See [this](https://www.dataquest.io/blog/installing-python-on-mac/#installing-python-mac) website to know more.\
@@ -93,4 +102,4 @@ pekoxusagikiwi@home:~$
 <strong>A:</strong> Please note that modded Discord clients violate the [Discord ToS (terms of service)](https://discord.com/terms), as do self-bots. However, in the spirit of FOSS, you may reuse this code with proper attribution as per the license; however, you must add a disclaimer of non-liability for any damages, as well a link back to this section of my README.MD in your README.MD or other readme/license files. In the case of copypastas/other text that is not of my own creation, please also provide proper attribution to the persons involved in creating them, like I have done. Don't steal others' work!
 
 <strong>Q:</strong> I have another question not answered here/wish to collaborate with you on a project. Where do I message?\
-<strong>A:</strong> In case you have a question I have not answered here, please send an email to the email address linked in my GitHub bio, and I will try to answer it as soon as I can. Since I am a full-time university student, and also work part-time and occasionally freelance, and also because of Gmail's weird spam filters (the address in my bio is an alias for my real Gmail address), it may take longer for me to answer your query. If you wish to collaborate, I am flattered, but I am still learning how to code, so I may be more of a liability than an asset; however, if you are willing to provide training/training resources/monetary compensation + work experience, I am all ears, and the same email inbox is open for you too, naturally; however, please preface your subject line with the following tag: `[IMPORTANT/GitHub misc]` so I know it's not a query, spam or otherwise a message simply not relevant to this repository or coding in general.
+<strong>A:</strong> In case you have a question I have not answered here, please send an email to the email address linked in my GitHub bio, and I will try to answer it as soon as I can. Since I am a full-time university student, and also do freelance work, and also because of Gmail's weird spam filters (the address in my bio is an alias for my real Gmail address), it may take longer for me to answer your query. If you wish to collaborate, I am flattered, but I am still learning how to code, so I may be more of a liability than an asset; however, if you are willing to provide training/training resources/monetary compensation + work experience, I am all ears, and the same email inbox is open for you too, naturally; however, please preface your subject line with the following tag: `[IMPORTANT/GitHub misc]` so I know it's not a query, spam or otherwise a message simply not relevant to this repository or coding in general.
