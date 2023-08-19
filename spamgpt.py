@@ -19,7 +19,7 @@ spamprompt = input("Please enter your spam prompt: ")
 
 # Create prompt with user input
 prompt = (f"Hey buddy, please generate a {spamlength}-word copypasta based on the following prompt: {spamprompt}"
-          f"Please ensure that the generated copypasta is PRECISELY {spamlength} words long.")
+          f"Please ensure that the generated copypasta is EXACTLY {spamlength} words long.")
 
 # Generate copypasta
 response = openai.ChatCompletion.create(
